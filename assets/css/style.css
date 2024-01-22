@@ -1,0 +1,323 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+/* RESET NO CSS DEFAULT DO BROWSER */
+*,
+*:after,
+*:before {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(#bf4c8c, #254eae);
+    background-repeat: no-repeat;
+    display: relative;
+    overflow: hidden;
+
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+.blob {
+    width: 1000px;
+    height: 1000px;
+    background: #000000;
+    border-radius: 100%;
+    opacity: 0.1;
+
+    position: absolute;
+    bottom: -700px;
+    left: -400px;
+}
+
+form {
+    width: 360px;
+    height: 600px;
+    background: #ffffff;
+    border-radius: 4px;
+    box-shadow: 2px 2px 8px 0 #3c3c3c;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form h3 {
+    font-family: "Roboto";
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 28px;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.inputs-labels {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 15px;
+    margin-top: 40px;
+}
+
+.input-label {
+    width: 280px;
+    height: 50px;
+    background: #e7e7e7;
+}
+
+.input-label i {
+    color: #b8b8b8;
+    font-size: 20px;
+    padding: 14px;
+}
+
+.input-label input {
+    font-family: "Roboto";
+    font-size: 16px;
+    width: 200px;
+    outline: none;
+    border: none;
+    background-color: #e7e7e7;
+    color: #3c3c3c;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+.input-remember {
+    font-family: "Roboto";
+
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+
+    gap: 8px;
+    padding: 14px 0;
+    width: 280px;
+}
+
+.input-remember span {
+    font-family: "Roboto";
+    font-size: 13px;
+}
+
+.checkbox-container {
+    width: 14px;
+    height: 14px;
+    border: 1px solid #c34c89;
+    border-radius: 4px;
+    position: relative;
+}
+
+.checkbox-checker {
+    width: 10px;
+    height: 10px;
+    background: #c34c89;
+    border-radius: 4px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.no-checked {
+    display: none;
+}
+
+form button {
+    font-family: "Roboto";
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 14px;
+
+    background: #c34c89;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+
+    margin-top: 12px;
+
+    width: 280px;
+    height: 50px;
+
+    cursor: pointer;
+}
+
+form button:hover {
+    filter: brightness(1.1);
+}
+
+.social-media {
+    width: 280px;
+    margin-top: 40px;
+}
+
+.social-media p {
+    font-family: "Roboto";
+    text-align: center;
+    color: #b6b6b6;
+}
+
+.social-media-links {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.social-media-links a {
+    font-family: "Roboto";
+    font-size: 14px;
+    text-decoration: none;
+
+    border: 1px solid #b0b0b0;
+    border-radius: 2px;
+
+    width: 130px;
+    height: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+}
+
+.social-media-faceboock {
+    color: #364fb0;
+    transition: 0.1s;
+}
+.social-media-faceboock:hover {
+    background-color: #364fb0;
+    color: #ffffff;
+}
+
+.social-media-google {
+    color: #b25449;
+    transition: 0.1s;
+}
+.social-media-google:hover {
+    background-color: #b25449;
+    color: #ffffff;
+}
+
+.social-media-google:hover {
+    color: #ffffff;
+}
+
+.forgot-password {
+    font-family: "Roboto";
+    text-align: center;
+    color: #b6b6b6;
+
+    margin-top: 100px;
+}
+
+.forgot-password span {
+    font-family: "Roboto";
+    text-align: center;
+    color: #b6b6b6;
+
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.forgot-password span:hover {
+    color: #000000;
+}
+
+.pop-up {
+    background-color: #ffffff;
+    border-radius: 4px;
+    box-shadow: 2px 2px 8px 0 #3c3c3c;
+
+    height: 200px;
+    width: 640px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.closed {
+    display: none;
+}
+
+.pop-up i {
+    width: 100%;
+    text-align: right;
+    font-size: 24px;
+
+    padding: 4px 4px 0 0;
+}
+
+.pop-up i:hover {
+    color: red;
+    cursor: pointer;
+}
+
+.pop-up h3 {
+    text-align: center;
+    font-family: "Roboto";
+    padding: 14px;
+}
+
+.pop-up p {
+    text-align: center;
+    font-family: "Roboto";
+    padding: 10px;
+}
+
+.pop-up-email-container {
+    margin-top: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.pop-up-email-container input[type="email"] {
+    font-family: "Roboto";
+
+    border: 1px solid red;
+    width: 400px;
+    height: 30px;
+
+    padding: 0 4px;
+
+    outline: none;
+
+    color: #3c3c3c;
+}
+
+.pop-up-email-container button {
+    font-family: "Roboto";
+    font-weight: 700;
+    text-transform: uppercase;
+
+    font-size: 14px;
+
+    background: #c34c89;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+
+    width: 120px;
+    height: 30px;
+
+    cursor: pointer;
+}
+
+form button:hover {
+    filter: brightness(1.1);
+}
