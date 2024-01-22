@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login Page</title>
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+
+<body>
+  <div class="blob"></div>
+  <form>
+    <h3>Login</h3>
+    <div class="inputs-labels">
+      <label class="input-label">
+        <i class="bx bx-envelope"></i>
+        <input type="text" name="email" id="email" placeholder="E-mail" />
+      </label>
+      <label class="input-label">
+        <i class="bx bx-lock-alt"></i>
+        <input type="password" name="passowrd" id="password" placeholder="Password" />
+      </label>
+    </div>
+
+    <label class="input-remember">
+      <input type="checkbox" name="remember" id="remember" />
+      <div class="checkbox-container">
+        <div class="checkbox-checker no-checked" id="checkbox-checker"></div>
+      </div>
+      <span>Remember-me</span>
+    </label>
+
+    <button>Login</button>
+
+    <div class="social-media">
+      <p>Or login with</p>
+      <div class="social-media-links">
+        <a href="#" class="social-media-faceboock">
+          <i class="bx bxl-facebook-square"></i>
+          <span>Facebook</span>
+        </a>
+        <a href="#" class="social-media-google">
+          <i class="bx bxl-google"></i>
+          <span>Google</span>
+        </a>
+      </div>
+    </div>
+
+    <p class="forgot-password">Forgot password? <span>Click Here!</span></p>
+  </form>
+
+  <!-- pop-up forgot password -->
+  <div class="pop-up closed" id="pop-up">
+    <i class="bx bx-x"></i>
+    <h3>Forgot passowrd?</h3>
+    <p>Type your email for send a new password for you</p>
+
+    <div class="pop-up-email-container">
+      <input type="email" placeholder="your-email@domain.com" />
+      <button>Send</button>
+    </div>
+  </div>
+</body>
+
+<script src="./assets/js/script.js"></script>
+
+</html>
