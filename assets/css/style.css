@@ -255,12 +255,59 @@ form button:hover {
     left: 50%;
     transform: translate(-50%, -50%);
 }
+.pop-up-email-container input[type="email"] {
+    font-family: "Roboto";
+    width: 400px;
+    height: 30px;
+
+    padding: 0 4px;
+
+    outline: none;
+
+    color: #3c3c3c;
+}
+.pop-up-email-container button {
+    font-family: "Roboto";
+    font-weight: 700;
+    text-transform: uppercase;
+
+    font-size: 14px;
+
+    background: #c34c89;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+
+    width: 120px;
+    height: 30px;
+
+    cursor: pointer;
+}
+
+.pop-up-email-container {
+    margin: 14px 12px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
 
 @media (max-width: 640px) {
     .pop-up {
+        height: 230px;
         width: 370px;
         padding: 10px;
         font-size: 14px;
+    }
+
+    .pop-up-email-container {
+        flex-direction: column;
+    }
+    .pop-up-email-container input[type="email"] {
+        width: 90%;
+    }
+    .pop-up-email-container button {
+        width: 90%;
     }
 }
 
@@ -291,46 +338,6 @@ form button:hover {
     text-align: center;
     font-family: "Roboto";
     padding: 10px;
-}
-
-.pop-up-email-container {
-    margin-top: 12px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 12px;
-}
-
-.pop-up-email-container input[type="email"] {
-    font-family: "Roboto";
-
-    border: 1px solid red;
-    width: 400px;
-    height: 30px;
-
-    padding: 0 4px;
-
-    outline: none;
-
-    color: #3c3c3c;
-}
-
-.pop-up-email-container button {
-    font-family: "Roboto";
-    font-weight: 700;
-    text-transform: uppercase;
-
-    font-size: 14px;
-
-    background: #c34c89;
-    color: #ffffff;
-    border: none;
-    border-radius: 4px;
-
-    width: 120px;
-    height: 30px;
-
-    cursor: pointer;
 }
 
 form button:hover {
